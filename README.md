@@ -1,9 +1,9 @@
 # CV Sascha Rose
 
-![Page 1](Sascha-Rose-CV-1.svg)
-![Page 2](Sascha-Rose-CV-2.svg)
-![Page 3](Sascha-Rose-CV-3.svg)
-![Page 4](Sascha-Rose-CV-4.svg)
+![Page 1](assets/Sascha-Rose-CV-1.svg)
+![Page 2](assets/Sascha-Rose-CV-2.svg)
+![Page 3](assets/Sascha-Rose-CV-3.svg)
+![Page 4](assets/Sascha-Rose-CV-4.svg)
 
 ## Development
 

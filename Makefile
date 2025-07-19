@@ -9,12 +9,12 @@ build-pdf:
 	open $(FILENAME).pdf
 
 pdf2svg:
-	pdf2svg $(FILENAME).pdf Sascha-Rose-CV-1.svg 1
-	pdf2svg $(FILENAME).pdf Sascha-Rose-CV-2.svg 2
-	pdf2svg $(FILENAME).pdf Sascha-Rose-CV-3.svg 3
-	pdf2svg $(FILENAME).pdf Sascha-Rose-CV-4.svg 4
+	pdf2svg $(FILENAME).pdf assets/Sascha-Rose-CV-1.svg 1
+	pdf2svg $(FILENAME).pdf assets/Sascha-Rose-CV-2.svg 2
+	pdf2svg $(FILENAME).pdf assets/Sascha-Rose-CV-3.svg 3
+	pdf2svg $(FILENAME).pdf assets/Sascha-Rose-CV-4.svg 4
 
-	for f in Sascha-Rose-CV-*.svg; do \
+	for f in assets/Sascha-Rose-CV-*.svg; do \
 		sed -i '' 's/<svg /<svg /' $$f; \
 		sed -i '' 's/<defs>/<rect width="100%" height="100%" fill="white"\/><defs>/' $$f; \
 	done
