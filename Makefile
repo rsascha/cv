@@ -19,6 +19,20 @@ pdf2svg:
 		sed -i '' 's/<defs>/<rect width="100%" height="100%" fill="white"\/><defs>/' $$f; \
 	done
 
+	pdf2svg Arbeitszeugnis-Sascha-Rose.pdf assets/Arbeitszeugnis-Sascha-Rose-1.svg 1
+	pdf2svg Arbeitszeugnis-Sascha-Rose.pdf assets/Arbeitszeugnis-Sascha-Rose-2.svg 2
+	pdf2svg Arbeitszeugnis-Sascha-Rose.pdf assets/Arbeitszeugnis-Sascha-Rose-3.svg 3
+
+	pdf2svg Eintragungsbestätigung-IHK-Sascha-Rose.pdf assets/Eintragungsbestätigung-IHK-Sascha-Rose.svg
+
+	for f in assets/Arbeitszeugnis-Sascha-Rose-1*.svg; do \
+		sed -i '' 's/<svg /<svg /' $$f; \
+		sed -i '' 's/<defs>/<rect width="100%" height="100%" fill="white"\/><defs>/' $$f; \
+	done
+
+	sed -i '' 's/<svg /<svg /' assets/Eintragungsbestätigung-IHK-Sascha-Rose.svg
+	sed -i '' 's/<defs>/<rect width="100%" height="100%" fill="white"\/><defs>/' assets/Eintragungsbestätigung-IHK-Sascha-Rose.svg
+
 clean:
 	rm -f *.aux *.log *.out *.toc
 

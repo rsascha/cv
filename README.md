@@ -5,6 +5,12 @@
 ![Page 3](assets/Sascha-Rose-CV-3.svg)
 ![Page 4](assets/Sascha-Rose-CV-4.svg)
 
+![Arbeitszeugnis](assets/Arbeitszeugnis-Sascha-Rose-1.svg)
+![Arbeitszeugnis](assets/Arbeitszeugnis-Sascha-Rose-2.svg)
+![Arbeitszeugnis](assets/Arbeitszeugnis-Sascha-Rose-3.svg)
+
+![Eintragungsbestätigung-IHK](assets/Eintragungsbestätigung-IHK-Sascha-Rose.svg)
+
 ## Development
 
 Notes for setting up the development environment.
