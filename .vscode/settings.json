@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "**/packages/web/src/index.css": "tailwindcss"
+  },
+  "prettier.printWidth": 120
+}
