@@ -19,6 +19,12 @@ body {
   @apply text-sm;
 }
 
+@media screen {
+  body {
+    @apply max-w-3xl mx-auto p-4;
+  }
+}
+
 @layer base {
   h1,
   h2,

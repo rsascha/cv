@@ -18,10 +18,6 @@ try {
           margin: 2cm;
           size: A4;
         }
-        body {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
       `,
   });
 
