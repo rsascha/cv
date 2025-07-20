@@ -1,0 +1,41 @@
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: Roboto, ui-sans-serif, system-ui, sans-serif;
+
+  --color-cv-blue: #0076a0;
+  --color-cv-green: #308060;
+  --color-cv-gray: #5a5a5a;
+  --color-cv-white: #f5f5f5;
+  --color-cv-black: #1e1e1e;
+}
+
+body {
+  @apply font-sans;
+  @apply text-sm;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-cv-blue;
+  }
+
+  h1 {
+    @apply text-xl font-normal;
+  }
+  h2 {
+    @apply text-lg font-normal;
+  }
+  h3 {
+    @apply text-sm font-normal;
+  }
+}
