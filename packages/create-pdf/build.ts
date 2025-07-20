@@ -39,6 +39,18 @@ try {
     },
   });
 
+  await page.pdf({
+    path: `../../Sascha-Rose-CV.pdf`,
+    format: "A4",
+    printBackground: true,
+    margin: {
+      top: "2cm",
+      right: "2cm",
+      bottom: "2cm",
+      left: "2cm",
+    },
+  });
+
   console.log(`PDF generated successfully: ${filename}`);
 } catch (error) {
   console.error("Error generating PDF:", error);
