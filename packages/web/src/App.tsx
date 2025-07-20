@@ -16,7 +16,7 @@ function App() {
           <Intro className="w-2/3" />
         </div>
       </div>
-      <div className="break-inside-avoid-page">
+      <div className="break-inside-avoid-page mt-4">
         <h2>Where I Gained Experience</h2>
         <Experience />
       </div>
