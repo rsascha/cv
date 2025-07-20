@@ -30,7 +30,7 @@ export function IconList() {
       </IconListItem>
       <IconListItem>
         <FaCircleInfo className={iconClassName} />
-        <a href="http://actyvyst.de">actyvst.de</a>
+        <a href="http://actyvyst.de">actyvyst.de</a>
       </IconListItem>
       <div>&nbsp;</div>
       <IconListItem>
