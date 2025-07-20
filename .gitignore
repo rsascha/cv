@@ -1,5 +1,4 @@
-material
+node_modules
+dist
+*.tsbuildinfo
 .DS_Store
-*.aux
-*.log
-*.out
