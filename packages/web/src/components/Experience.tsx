@@ -55,7 +55,7 @@ export function Experience() {
       subtitle: "actyvyst GmbH",
       description:
         "Mobile app for Android for recording and transmitting traffic countings. Traffic counters can use this app to record configurable interviews and count data. To ensure the use of the app even without a network, the data is recorded offline and then transmitted to the central server, where it is consolidated and validated in an evaluation system.",
-      image: "/qiv.png",
+      image: "qiv.png",
       technologies:
         "React, React Native, Node.js (Express), TypeScript, Excel: [Power Query, AddIn (VB Script), TaskPane (React)], .Net (C#), PostgreSQL, GitHub Actions, Clerk, Render.",
     },
@@ -66,7 +66,7 @@ export function Experience() {
       subtitle: "actyvyst GmbH",
       description:
         "The app enables meter reading (including camera integration), provides consumption forecasts, and supports monthly payment optimization. I developed the backend systems, integrated APIs, and set up the entire infrastructure.",
-      image: "/badenova.png",
+      image: "badenova.png",
       technologies:
         "React, React Native, Node.js (NestJS, Express), TypeScript, Python (FastAPI), PostgreSQL, GitHub Actions, OAuth 2.0 (PKCE), AWS, Kyma (SAP), Kubernetes.",
     },
@@ -77,7 +77,7 @@ export function Experience() {
       subtitle: "actyvyst GmbH",
       description:
         "I worked part-time as a lecturer, helping career changers enter the field of software development. I also created and updated parts of the curriculum.",
-      image: "/logo-campus-talents.png",
+      image: "logo-campus-talents.png",
       technologies:
         "JavaScript, web development with React, app development with React Native (iOS, Android), API development with Node.js and Express, MongoDB, PostgreSQL.",
     },
@@ -88,7 +88,7 @@ export function Experience() {
       subtitle: "actyvyst GmbH",
       description:
         'Development of the "Escape Box" iPad app, an interactive game master for an escape room experience. Designed as a playful tool for security awareness training, the app coordinates the game as a timekeeper and offers hints using multimedia and animations to guide players through the challenges.',
-      image: "/awareness-kitchen.png",
+      image: "awareness-kitchen.png",
       technologies: "React Native, Expo, Gesture Handling, Animations, Videos, TypeScript.",
     },
     {
