@@ -6,7 +6,8 @@
   "description": "This is my CV and portfolio.",
   "scripts": {
     "run:web": "pnpm run --filter web dev",
-    "run:create-pdf": "pnpm run --filter create-pdf build"
+    "run:create-pdf": "pnpm run --filter create-pdf build",
+    "run:deploy": "pnpm run --filter web deploy"
   },
   "keywords": [
     "cv",
