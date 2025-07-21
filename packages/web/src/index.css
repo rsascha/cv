@@ -17,6 +17,9 @@
 body {
   @apply font-sans;
   @apply text-sm;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: optimizeSpeed;
 }
 
 @media screen {
