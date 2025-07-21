@@ -15,7 +15,7 @@ export function Intro({ className = "" }: { className?: string }) {
       </p>
       <p>&nbsp;</p>
       <p>
-        With a strong focus on continuous learning, and innovation, I stay up to date with current tech trends and best
+        With a strong focus on continuous learning and innovation, I stay up-to-date with current tech trends and best
         practices.
       </p>
       <p>&nbsp;</p>

@@ -5,9 +5,9 @@
   "license": "UNLICENSED",
   "description": "This is my CV and portfolio.",
   "scripts": {
-    "run:web": "pnpm run --filter web dev",
-    "run:create-pdf": "pnpm run --filter create-pdf build",
-    "run:deploy": "pnpm run --filter web deploy"
+    "web:dev": "pnpm run --filter web dev",
+    "web:deploy": "pnpm run --filter web deploy",
+    "create-pdf:build": "pnpm run --filter create-pdf build"
   },
   "keywords": [
     "cv",

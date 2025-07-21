@@ -54,7 +54,7 @@ export function Experience() {
       company: "QiV - Qualität im Verkehr",
       subtitle: "actyvyst GmbH",
       description:
-        "Mobile app for Android for recording and transmitting traffic countings. Traffic counters can use this app to record configurable interviews and count data. To ensure the use of the app even without a network, the data is recorded offline and then transmitted to the central server, where it is consolidated and validated in an evaluation system.",
+        "Mobile app for Android to record and transmit traffic countings. Traffic counters can use this app to record configurable interviews and count data. The data is recorded offline and then transmitted to the central server, where it is consolidated and validated in an evaluation system.",
       image: "qiv.png",
       technologies:
         "React, React Native, Node.js (Express), TypeScript, Excel: [Power Query, AddIn (VB Script), TaskPane (React)], .Net (C#), PostgreSQL, GitHub Actions, Clerk, Render.",
@@ -95,7 +95,7 @@ export function Experience() {
       title: "Software Engineer",
       period: "2022",
       company: "actyvyst GmbH",
-      description: "I have been a shareholder and employee of actyvyst GmbH.",
+      description: "I joined actyvyst GmbH as a shareholder and software engineer.",
     },
     {
       title: "Software Engineer",

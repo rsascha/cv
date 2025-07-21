@@ -24,8 +24,8 @@ export function TechStackItem({ technology, logo, experience }: TechStackItemPro
   return (
     <div className="flex items-center gap-1 w-full mb-1.5">
       <img src={logo} alt={`${technology} logo`} className="w-4 h-4" />
-      <span className="flex flex-1/2 text-xs">{technology}</span>
-      <div className="flex flex-1/2 gap-2 items-center">
+      <span className="flex-1 text-xs">{technology}</span>
+      <div className="flex-1 flex gap-2 items-center">
         <div className="h-2 w-full border">
           <div className="h-full bg-cv-blue" style={{ width: `${(experience / 10) * 100}%` }}></div>
         </div>
@@ -52,13 +52,14 @@ export function Technologies({ className = "" }: { className?: string }) {
       </TechItemContainer>
 
       <TechItemContainer title="Backend & Databases">
-        <TechStackItem technology="Node.js Express" logo="nodejs.png" experience={9} />
+        <TechStackItem technology="Node.js" logo="nodejs.png" experience={9} />
+        <TechStackItem technology="Express.js" logo="express.png" experience={9} />
         <TechStackItem technology="PostgreSQL" logo="pg.png" experience={7} />
         <TechStackItem technology="MongoDB" logo="mongo.png" experience={5} />
       </TechItemContainer>
 
       <TechItemContainer title="DevOps & Tools">
-        <TechStackItem technology="GitHub" logo="github.png" experience={8} />
+        <TechStackItem technology="Git/GitHub" logo="github.png" experience={8} />
         <TechStackItem technology="Jenkins" logo="jenkins.png" experience={8} />
         <TechStackItem technology="AWS" logo="aws.png" experience={7} />
         <TechStackItem technology="Docker" logo="docker.png" experience={7} />
