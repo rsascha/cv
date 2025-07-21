@@ -11,9 +11,9 @@ function App() {
           </div>
           <img src="sascha-rose.png" alt="Sascha Rose" height={200} />
         </div>
-        <div className="flex gap-6 mt-4">
-          <Intro className="w-3/4" />
-          <Technologies className="w-1/4" />
+        <div className="flex flex-col sm:flex-row gap-6 mt-4">
+          <Intro className="w-full sm:w-3/4" />
+          <Technologies className="w-full sm:w-1/4" />
         </div>
       </div>
       <div className="break-inside-avoid-page mt-4">
