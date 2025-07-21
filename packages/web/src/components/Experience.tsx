@@ -21,12 +21,10 @@ export function ExperienceItem({
     <div className="mb-8">
       <div className="flex gap-4 items-start">
         <div className="w-1/3 flex-shrink-0">
-          <h4>
-            {title} <span className="text-cv-gray text-xs mb-1">({period})</span>
-          </h4>
-
+          <h4>{title}</h4>
+          <div className="text-xs text-cv-gray mb-1">{period}</div>
           <div className="mb-1">{company}</div>
-          {subtitle && <div className="text-sm text-cv-gray">{subtitle}</div>}
+          {subtitle && <div className="text-xs text-cv-gray">{subtitle}</div>}
         </div>
         <div className="w-2/3">
           <div className="mb-4">{description}</div>
@@ -62,7 +60,7 @@ export function Experience() {
     {
       title: "Software Engineer",
       period: "2022-2025",
-      company: "badenova AG & Co. KG (energy provider)",
+      company: "badenova AG & Co. KG",
       subtitle: "actyvyst GmbH",
       description:
         "The app enables meter reading (including camera integration), provides consumption forecasts, and supports monthly payment optimization. I developed the backend systems, integrated APIs, and set up the entire infrastructure.",

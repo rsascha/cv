@@ -24,11 +24,6 @@ export function Intro({ className = "" }: { className?: string }) {
         lead implementations with confidence.
       </p>
       <p>&nbsp;</p>
-      <p>
-        I'm skilled at bridging the gap between developers and management — translating technical challenges into
-        business-relevant language and vice versa.
-      </p>
-      <p>&nbsp;</p>
       <h2>Languages</h2>
       <p>German (native), English (fluent)</p>
       <p>&nbsp;</p>
