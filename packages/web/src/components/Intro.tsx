@@ -21,7 +21,8 @@ export function Intro({ className = "" }: { className?: string }) {
       <p>&nbsp;</p>
       <p>
         My experience working with interdisciplinary teams allows me to communicate technical decisions effectively and
-        lead implementations with confidence.
+        lead implementations with confidence. I combine excellent analytical and decision-making skills with strong
+        self-organisation and a solution-oriented mindset.
       </p>
       <p>&nbsp;</p>
       <h2>Languages</h2>
