@@ -112,7 +112,7 @@ export function Experience() {
       description:
         "As a Senior Developer, I led software development in the field of internet booking engines for travel portals. My tasks included frontend and microservice development, as well as major contributions to infrastructure setup. I introduced trunk-based development, automated deployments, implemented CI/CD pipelines, standardized test automation (unit, E2E, and integration tests), and established quality and security gates to ensure software quality and security.",
       technologies:
-        "Angular, TypeScript, NodeJS (NestJS), OpenAPI, ORM, MongoDB, Redis, Keycloak, Kubernetes, Kustomize, NGINX, Prometheus, ELK, Jenkins, Docker, Artifactory, Confluence, Jira, Jest, Cypress, SonarQube, Fortify, BlackDuck, OWASP ZAP.",
+        "Angular, TypeScript, Node.js (NestJS, Express), OpenAPI, ORM, MongoDB, Redis, Keycloak, Kubernetes, Kustomize, NGINX, Prometheus, ELK, Jenkins, Docker, Artifactory, Confluence, Jira, Jest, Cypress, SonarQube, Fortify, BlackDuck, OWASP ZAP.",
     },
     {
       title: "Head of Software Development",
