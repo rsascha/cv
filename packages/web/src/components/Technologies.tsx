@@ -53,7 +53,7 @@ export function Technologies({ className = "" }: { className?: string }) {
 
       <TechItemContainer title="Backend & Databases">
         <TechStackItem technology="Node.js Express" logo="nodejs.png" experience={9} />
-        <TechStackItem technology="Postgre SQL" logo="pg.png" experience={7} />
+        <TechStackItem technology="PostgreSQL" logo="pg.png" experience={7} />
         <TechStackItem technology="MongoDB" logo="mongo.png" experience={5} />
       </TechItemContainer>
 
