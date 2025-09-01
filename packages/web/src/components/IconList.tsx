@@ -16,7 +16,7 @@ export function IconList() {
     <div>
       <IconListItem>
         <FaEnvelope className={iconClassName} />
-        <a href="mailto:sascha.rose@gmail.com">sascha.rose@gmail.com</a>
+        <a href="mailto:sascha.rose@actyvyst.com">sascha.rose@actyvyst.com</a>
       </IconListItem>
       <IconListItem>
         <FaPhone className={iconClassName} />
