@@ -9,6 +9,9 @@ export function IconList() {
   const iconClassName = "h-6 text-xl text-cv-blue";
   const greenIconClassName = "h-6 text-xl text-cv-green";
 
+  const currentMonth = new Date().toLocaleDateString("en-US", { month: "long" });
+  const currentYear = new Date().getFullYear();
+
   return (
     <div>
       <IconListItem>
@@ -35,7 +38,9 @@ export function IconList() {
       <div>&nbsp;</div>
       <IconListItem>
         <FaSeedling className={greenIconClassName} />
-        <span>Available from July 2025</span>
+        <span>
+          Available from {currentMonth} {currentYear}
+        </span>
       </IconListItem>
     </div>
   );
