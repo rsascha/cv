@@ -15,7 +15,7 @@ export function TechStackItem({ technology, logo }: TechStackItemProps) {
 export function Technologies({ className = "" }: { className?: string }) {
   return (
     <div className={className}>
-      <h2>My Core Stack</h2>
+      <h2 className="ml-5">My Core Stack</h2>
       <div className={"flex flex-wrap justify-between"}>
         <TechStackItem technology="React" logo="react.png" />
         <TechStackItem technology="React Native" logo="phone.png" />

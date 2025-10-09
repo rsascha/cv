@@ -9,7 +9,7 @@ function App() {
             <h1 className="mb-2">Sascha Rose - Software Engineer</h1>
             <IconList />
           </div>
-          <img src="sascha-rose.png" alt="Sascha Rose" className="h-48 w-auto object-contain" />
+          <img src="sascha-rose.png" alt="Sascha Rose" className="h-48 w-auto object-contain mr-1" />
         </div>
         <div className="flex flex-col sm:flex-row gap-6 mt-4">
           <Intro className="w-full sm:w-3/4" />
