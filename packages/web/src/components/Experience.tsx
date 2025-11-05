@@ -48,6 +48,16 @@ export function Experience() {
   const experiences: ExperienceItemProps[] = [
     {
       title: "Software Engineer",
+      period: "2025",
+      company: "Awareness Kitchen",
+      subtitle: "actyvyst GmbH",
+      description:
+        "Development of a new version of the “Escape Box” iPad app — an interactive game master for an escape room experience. Designed as a playful tool for security awareness training, the app manages the game as a timekeeper and provides hints through multimedia and animations to guide players through the challenges.",
+      image: "awareness-kitchen-2.png",
+      technologies: "React Native, Expo, Gesture Handling, Animations, Videos, TypeScript.",
+    },
+    {
+      title: "Software Engineer",
       period: "2024-2025",
       company: "QiV - Qualität im Verkehr",
       subtitle: "actyvyst GmbH",
@@ -86,7 +96,7 @@ export function Experience() {
       subtitle: "actyvyst GmbH",
       description:
         'Development of the "Escape Box" iPad app, an interactive game master for an escape room experience. Designed as a playful tool for security awareness training, the app coordinates the game as a timekeeper and offers hints using multimedia and animations to guide players through the challenges.',
-      image: "awareness-kitchen.png",
+      image: "awareness-kitchen-1.png",
       technologies: "React Native, Expo, Gesture Handling, Animations, Videos, TypeScript.",
     },
     {
