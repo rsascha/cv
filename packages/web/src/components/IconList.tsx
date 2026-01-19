@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { FaEnvelope, FaPhone, FaHouseChimney, FaGithub, FaCircleInfo, FaSeedling } from "react-icons/fa6";
+import { FaCircleInfo, FaEnvelope, FaGithub, FaHouseChimney, FaPhone } from "react-icons/fa6";
 
 function IconListItem({ children }: { children: ReactNode }) {
   return <div className="flex gap-2 items-center">{children}</div>;
@@ -7,10 +7,10 @@ function IconListItem({ children }: { children: ReactNode }) {
 
 export function IconList() {
   const iconClassName = "h-6 text-xl text-cv-blue";
-  const greenIconClassName = "h-6 text-xl text-cv-green";
+  // const greenIconClassName = "h-6 text-xl text-cv-green";
 
-  const currentMonth = new Date().toLocaleDateString("en-US", { month: "long" });
-  const currentYear = new Date().getFullYear();
+  // const currentMonth = new Date().toLocaleDateString("en-US", { month: "long" });
+  // const currentYear = new Date().getFullYear();
 
   return (
     <div>
@@ -35,13 +35,13 @@ export function IconList() {
         <FaCircleInfo className={iconClassName} />
         <a href="https://actyvyst.de">actyvyst.de</a>
       </IconListItem>
-      <div>&nbsp;</div>
+      {/* <div>&nbsp;</div>
       <IconListItem>
         <FaSeedling className={greenIconClassName} />
         <span>
           Available from {currentMonth} {currentYear}
         </span>
-      </IconListItem>
+      </IconListItem> */}
     </div>
   );
 }
