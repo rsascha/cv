@@ -6,6 +6,7 @@ export interface ExperienceItemProps {
   technologies?: string;
   image?: string;
   subtitle?: string;
+  links?: { label: string; href: string }[];
 }
 
 export function ExperienceItem({
@@ -16,6 +17,7 @@ export function ExperienceItem({
   technologies,
   image,
   subtitle,
+  links,
 }: ExperienceItemProps) {
   return (
     <div className="mb-8">
@@ -33,6 +35,19 @@ export function ExperienceItem({
               <img src={image} alt={company} className="max-w-[80%] h-auto" />
             </div>
           )}
+          {links && links.length > 0 && (
+            <div className="mb-2">
+              <span className="font-semibold">Links:</span>{" "}
+              {links.map((link, i) => (
+                <span key={link.href}>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" className="underline">
+                    {link.label}
+                  </a>
+                  {i < links.length - 1 ? ", " : ""}
+                </span>
+              ))}
+            </div>
+          )}
           {technologies && (
             <div>
               <span className="font-semibold">Technologies:</span> {technologies}
@@ -46,6 +61,24 @@ export function ExperienceItem({
 
 export function Experience() {
   const experiences: ExperienceItemProps[] = [
+    {
+      title: "Software Engineer",
+      period: "2025-2026",
+      company: "SfP-IT GmbH",
+      subtitle: "actyvyst GmbH",
+      description:
+        "Scanly AI - App development and operation of a consumer app for iOS and Android for creating listings. One photo. A finished eBay listing. Sell and earn money. ScanlyAI recognizes your products, determines the best price, and writes your listing automatically.",
+      image: "scanlyai-screens.png",
+      links: [
+        { label: "scanlyai.de", href: "https://scanlyai.de" },
+        { label: "App Store", href: "https://apps.apple.com/de/app/scanlyai/id6746640373" },
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=de.sfp_it.ScanlyAI",
+        },
+      ],
+      technologies: "Expo, React Native, React Native Paper, TanStack Query, SignalR, Firebase, Notifications.",
+    },
     {
       title: "Software Engineer",
       period: "2025",
