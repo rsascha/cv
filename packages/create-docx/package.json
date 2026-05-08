@@ -1,0 +1,14 @@
+{
+  "name": "create-docx",
+  "version": "1.0.0",
+  "description": "Generate Word (.docx) versions of the CV from the shared i18n content.",
+  "type": "module",
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "docx": "^9.0.0",
+    "tsx": "^4.20.3"
+  }
+}

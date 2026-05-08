@@ -1,6 +1,15 @@
-import type { ExperienceItemProps } from "../components/Experience";
-
 export type Language = "en" | "de";
+
+export type ExperienceItem = {
+  title: string;
+  period: string;
+  company: string;
+  description: string;
+  technologies?: string;
+  image?: string;
+  subtitle?: string;
+  links?: { label: string; href: string }[];
+};
 
 export type Content = {
   language: Language;
@@ -25,7 +34,7 @@ export type Content = {
     heading: string;
     linksLabel: string;
     technologiesLabel: string;
-    items: ExperienceItemProps[];
+    items: ExperienceItem[];
   };
   switcher: {
     label: string;

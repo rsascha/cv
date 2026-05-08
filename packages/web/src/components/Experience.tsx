@@ -1,17 +1,7 @@
 import { useContent } from "../i18n";
+import type { ExperienceItem as ExperienceItemData } from "../i18n/types";
 
-export interface ExperienceItemProps {
-  title: string;
-  period: string;
-  company: string;
-  description: string;
-  technologies?: string;
-  image?: string;
-  subtitle?: string;
-  links?: { label: string; href: string }[];
-}
-
-type ExperienceItemViewProps = ExperienceItemProps & {
+type ExperienceItemViewProps = ExperienceItemData & {
   linksLabel: string;
   technologiesLabel: string;
   assetPrefix: string;
