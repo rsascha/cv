@@ -14,7 +14,7 @@ function App() {
           <div className="flex flex-col items-end">
             <LanguageSwitcher className="mb-2 print:hidden" />
             <img
-              src={`${assetPrefix}sascha-rose.png`}
+              src={`${assetPrefix}sascha-rose.jpg`}
               alt="Sascha Rose"
               className="h-48 w-auto object-contain mr-1"
             />

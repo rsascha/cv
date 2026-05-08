@@ -27,7 +27,7 @@ import type { Content, ExperienceItem } from "../web/src/i18n/types";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, "..", "..");
-const photoPath = resolve(__dirname, "..", "web", "public", "sascha-rose.png");
+const photoPath = resolve(__dirname, "..", "web", "public", "sascha-rose.jpg");
 
 const noBorder = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" } as const;
 const tableNoBorders = {
@@ -64,8 +64,17 @@ function sectionHeading(text: string) {
   });
 }
 
-function readPngSize(buffer: Buffer) {
-  return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+function readJpegSize(buffer: Buffer) {
+  let i = 2;
+  while (i < buffer.length) {
+    if (buffer[i] !== 0xff) throw new Error("invalid JPEG");
+    const marker = buffer[i + 1];
+    if (marker >= 0xc0 && marker <= 0xc3) {
+      return { height: buffer.readUInt16BE(i + 5), width: buffer.readUInt16BE(i + 7) };
+    }
+    i += 2 + buffer.readUInt16BE(i + 2);
+  }
+  throw new Error("JPEG SOF marker not found");
 }
 
 function buildHeader(content: Content, photoData: Buffer) {
@@ -97,11 +106,11 @@ function buildHeader(content: Content, photoData: Buffer) {
     return new Paragraph({ spacing: { after: 60 }, children });
   });
 
-  const photoSize = readPngSize(photoData);
+  const photoSize = readJpegSize(photoData);
   const photoWidth = 130;
   const photoHeight = Math.round((photoWidth * photoSize.height) / photoSize.width);
   const photoOptions: IImageOptions = {
-    type: "png",
+    type: "jpg",
     data: photoData,
     transformation: { width: photoWidth, height: photoHeight },
   };

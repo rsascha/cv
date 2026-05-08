@@ -37,7 +37,7 @@ export const de: Content = {
         subtitle: "actyvyst GmbH",
         description:
           "Scanly AI — Entwicklung und Betrieb einer Consumer-App für iOS und Android zum Erstellen von Inseraten. Ein Foto. Ein fertiges eBay-Inserat. Verkaufen und Geld verdienen. ScanlyAI erkennt deine Produkte, ermittelt den besten Preis und schreibt dein Inserat automatisch.",
-        image: "scanlyai-screens.png",
+        image: "scanlyai-screens.jpg",
         links: [
           { label: "scanlyai.de", href: "https://scanlyai.de" },
           { label: "App Store", href: "https://apps.apple.com/de/app/scanlyai/id6746640373" },
@@ -55,7 +55,7 @@ export const de: Content = {
         subtitle: "actyvyst GmbH",
         description:
           "Entwicklung einer neuen Version der „Escape Box“ iPad-App — ein interaktiver Game Master für ein Escape-Room-Erlebnis. Konzipiert als spielerisches Tool für Security-Awareness-Trainings, steuert die App das Spiel als Zeitnehmer und gibt über Multimedia und Animationen Hinweise, um die Spielenden durch die Herausforderungen zu führen.",
-        image: "awareness-kitchen-2.png",
+        image: "awareness-kitchen-2.jpg",
         technologies: "React Native, Expo, Gesture Handling, Animationen, Videos, TypeScript.",
       },
       {
@@ -65,7 +65,7 @@ export const de: Content = {
         subtitle: "actyvyst GmbH",
         description:
           "Mobile Android-App zur Erfassung und Übermittlung von Verkehrszählungen. Verkehrszählerinnen und -zähler erfassen mit der App konfigurierbare Interviews und Zähldaten. Die Daten werden offline aufgenommen und anschließend an den zentralen Server übertragen, wo sie in einem Auswertungssystem konsolidiert und validiert werden.",
-        image: "qiv.png",
+        image: "qiv.jpg",
         technologies:
           "React, React Native, Node.js (Express), TypeScript, Excel: [Power Query, AddIn (VB Script), TaskPane (React)], .Net (C#), PostgreSQL, GitHub Actions, Clerk, Render.",
       },
@@ -76,7 +76,7 @@ export const de: Content = {
         subtitle: "actyvyst GmbH",
         description:
           "Die App ermöglicht das Ablesen von Zählerständen (inkl. Kamera-Integration), liefert Verbrauchsprognosen und unterstützt die Optimierung der monatlichen Abschlagszahlungen. Ich habe die Backend-Systeme entwickelt, APIs integriert und die gesamte Infrastruktur aufgebaut.",
-        image: "badenova.png",
+        image: "badenova.jpg",
         technologies:
           "React, React Native, Node.js (NestJS, Express), TypeScript, Python (FastAPI), PostgreSQL, GitHub Actions, OAuth 2.0 (PKCE), AWS, Kyma (SAP), Kubernetes.",
       },
@@ -98,7 +98,7 @@ export const de: Content = {
         subtitle: "actyvyst GmbH",
         description:
           "Entwicklung der „Escape Box“ iPad-App, ein interaktiver Game Master für ein Escape-Room-Erlebnis. Konzipiert als spielerisches Tool für Security-Awareness-Trainings, koordiniert die App das Spiel als Zeitnehmer und liefert mit Multimedia und Animationen Hinweise, um die Spielenden durch die Herausforderungen zu führen.",
-        image: "awareness-kitchen-1.png",
+        image: "awareness-kitchen-1.jpg",
         technologies: "React Native, Expo, Gesture Handling, Animationen, Videos, TypeScript.",
       },
       {
