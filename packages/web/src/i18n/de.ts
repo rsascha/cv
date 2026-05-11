@@ -45,7 +45,8 @@ export const de: Content = {
             href: "https://play.google.com/store/apps/details?id=de.sfp_it.ScanlyAI",
           },
         ],
-        technologies: "Expo, React Native, React Native Paper, TanStack Query, SignalR, Firebase, Notifications.",
+        technologies:
+          "Expo, React Native, React Native Paper, TanStack Query, SignalR, Firebase, Notifications, RevenueCat.",
       },
       {
         title: "Software Engineer",
