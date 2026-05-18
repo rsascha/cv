@@ -27,7 +27,7 @@ import type { Content, ExperienceItem } from "../web/src/i18n/types";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, "..", "..");
-const photoPath = resolve(__dirname, "..", "web", "public", "sascha-rose.jpg");
+const photoPath = resolve(__dirname, "..", "web", "public", "sascha-rose.png");
 
 const noBorder = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" } as const;
 const tableNoBorders = {
@@ -98,7 +98,7 @@ function buildHeader(content: Content, photoData: Buffer) {
         new ExternalHyperlink({
           link: line.href,
           children: [new TextRun({ text: line.value, color: cvBlue, style: "Hyperlink" })],
-        })
+        }),
       );
     } else {
       children.push(new TextRun({ text: line.value }));
@@ -176,7 +176,7 @@ function buildExperienceItem(item: ExperienceItem, content: Content) {
       spacing: { before: 200, after: 60 },
       keepNext: true,
       children: titleChildren,
-    })
+    }),
   );
 
   const companyText = item.subtitle ? `${item.company} · ${item.subtitle}` : item.company;
@@ -185,21 +185,19 @@ function buildExperienceItem(item: ExperienceItem, content: Content) {
       spacing: { after: 100 },
       keepNext: true,
       children: [new TextRun({ text: companyText, italics: true })],
-    })
+    }),
   );
 
   paragraphs.push(paragraph(item.description, { spacingAfter: 80 }));
 
   if (item.links && item.links.length > 0) {
-    const linkChildren: ParagraphChild[] = [
-      new TextRun({ text: `${content.experience.linksLabel}: `, bold: true }),
-    ];
+    const linkChildren: ParagraphChild[] = [new TextRun({ text: `${content.experience.linksLabel}: `, bold: true })];
     item.links.forEach((link, index) => {
       linkChildren.push(
         new ExternalHyperlink({
           link: link.href,
           children: [new TextRun({ text: link.label, color: cvBlue, style: "Hyperlink" })],
-        })
+        }),
       );
       if (index < item.links!.length - 1) {
         linkChildren.push(new TextRun({ text: ", " }));
@@ -216,7 +214,7 @@ function buildExperienceItem(item: ExperienceItem, content: Content) {
           new TextRun({ text: `${content.experience.technologiesLabel}: `, bold: true }),
           new TextRun({ text: item.technologies }),
         ],
-      })
+      }),
     );
   }
 

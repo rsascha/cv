@@ -13,11 +13,7 @@ function App() {
           </div>
           <div className="flex flex-col items-end">
             <LanguageSwitcher className="mb-2 print:hidden" />
-            <img
-              src={`${assetPrefix}sascha-rose.jpg`}
-              alt="Sascha Rose"
-              className="h-48 w-auto object-contain mr-1"
-            />
+            <img src={`${assetPrefix}sascha-rose.png`} alt="Sascha Rose" className="h-48 w-auto object-contain mr-1" />
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-6 mt-4">
